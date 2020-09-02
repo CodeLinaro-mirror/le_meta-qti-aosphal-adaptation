@@ -13,9 +13,9 @@ S = "${WORKDIR}/libhardware"
 
 PR = "r7"
 
-DEPENDS += "libcutils libutils liblog system-core-headers"
+DEPENDS += "libcutils libutils liblog system-core"
 
-PACKAGECONFIG ?= "audio camera display location sensors"
+PACKAGECONFIG ?= "audio camera display sensors"
 
 PACKAGECONFIG[audio]    = "--enable-audio, --disable-audio"
 PACKAGECONFIG[camera]   = "--enable-camera, --disable-camera"
