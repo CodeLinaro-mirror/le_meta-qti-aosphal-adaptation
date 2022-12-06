@@ -15,6 +15,6 @@ DEPENDS += "libcutils binder liblog libutils"
 
 CPPFLAGS += "-I${STAGING_INCDIR}/camera"
 
-FILES_${PN}-dbg    = "${libdir}/.debug/lib*.*"
-FILES_${PN}        = "${libdir}/lib*.so.* ${libdir}/pkgconfig/*"
-FILES_${PN}-dev    = "${libdir}/lib*.so ${libdir}/lib*.la ${includedir}"
+FILES:${PN}-dbg    = "${libdir}/.debug/lib*.*"
+FILES:${PN}        = "${libdir}/lib*.so.* ${libdir}/pkgconfig/*"
+FILES:${PN}-dev    = "${libdir}/lib*.so ${libdir}/lib*.la ${includedir}"
