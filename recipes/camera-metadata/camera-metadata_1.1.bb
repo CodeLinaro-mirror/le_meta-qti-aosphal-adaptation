@@ -12,6 +12,7 @@ SRC_URI =+ "file://camera_metadata"
 S = "${WORKDIR}/camera_metadata"
 
 DEPENDS += "libcutils binder liblog libutils"
+CFLAGS += "-Wno-error=implicit-function-declaration"
 
 CPPFLAGS += "-I${STAGING_INCDIR}/camera"
 
