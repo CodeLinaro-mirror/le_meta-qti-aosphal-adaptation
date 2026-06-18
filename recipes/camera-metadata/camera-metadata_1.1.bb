@@ -16,6 +16,6 @@ CFLAGS += "-Wno-error=implicit-function-declaration"
 
 CPPFLAGS += "-I${STAGING_INCDIR}/camera"
 
-FILES:${PN}-dbg    = "${libdir}/.debug/lib*.*"
-FILES:${PN}        = "${libdir}/lib*.so.* ${libdir}/pkgconfig/*"
-FILES:${PN}-dev    = "${libdir}/lib*.so ${libdir}/lib*.la ${includedir}"
+FILES_${PN}-dbg    = "${libdir}/.debug/lib*.*"
+FILES_${PN}        = "${libdir}/lib*.so.* ${libdir}/pkgconfig/*"
+FILES_${PN}-dev    = "${libdir}/lib*.so ${libdir}/lib*.la ${includedir}"
