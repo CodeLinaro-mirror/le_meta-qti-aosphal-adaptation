@@ -9,7 +9,7 @@ ${LICENSE};md5=89aea4e17d99a7cacdbeed46a0096b10"
 FILESPATH =+ "${WORKSPACE}/aosphal-adaptation:"
 SRC_URI   = "file://libhardware/"
 
-S = "${WORKDIR}/libhardware"
+S = "${UNPACKDIR}/libhardware"
 
 PR = "r7"
 
