@@ -14,6 +14,7 @@ S = "${UNPACKDIR}/camera_metadata"
 DEPENDS += "libcutils binder liblog libutils"
 
 CPPFLAGS += "-I${STAGING_INCDIR}/camera"
+CFLAGS:append = " -D_GNU_SOURCE -D_DEFAULT_SOURCE"
 
 FILES:${PN}-dbg    = "${libdir}/.debug/lib*.*"
 FILES:${PN}        = "${libdir}/lib*.so.* ${libdir}/pkgconfig/*"
